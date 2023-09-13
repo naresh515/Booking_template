@@ -190,6 +190,7 @@ li::marker {
   font-size: 13px;
   color: #006ce4;
   margin: 0 0 10px 0;
+  cursor: pointer;
 }
 
 .footer,
@@ -1061,4 +1062,12 @@ li::marker {
 .discover-img {
   padding-left: 32px;
   margin-right: 32px;
+}
+
+.login a:hover {
+  color: #bc5b01;
+}
+
+.footer-list li:hover {
+  color: #bc5b01;
 }
