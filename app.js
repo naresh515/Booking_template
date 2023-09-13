@@ -63,11 +63,6 @@ $(document).ready(function () {
     $("#" + tab_id).addClass("current");
   });
 
-  // $(".list").click(function () {
-  //   $(".list").removeClass("first")
-  //   $(this).addClass("first");
-  // });
-
   $(".plus").click(function () {
     var textValue = $(this).parent().find(".button-text");
     var currentValue = parseInt(textValue.text());

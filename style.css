@@ -496,10 +496,6 @@ li::marker {
   background-color: rgba(0, 108, 228, 0.06);
 }
 
-.trip-slider {
-  display: grid;
-}
-
 .tab-slider-item,
 .explore-slider-itme,
 .property-slider-item {
@@ -920,4 +916,76 @@ li::marker {
 .icon {
   position: absolute;
   right: 5px;
+}
+
+.trip-slider-item.bg-trip {
+  width: 540px !important;
+  flex: 0 0 auto;
+}
+
+.trip-slider-item {
+  width: 260px !important;
+  flex: 0 0 auto;
+  margin-right: 16px;
+}
+
+.last {
+  margin-right: 0px;
+}
+
+.trip-slider {
+  display: flex !important;
+}
+
+.trip-slider .slick-list {
+  display: flex !important;
+}
+
+.trip-slider .slick-track {
+  display: flex !important;
+}
+
+.trip-text h4 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #1a1a1a;
+  margin-bottom: 0px;
+}
+.trip-text p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #474747;
+  margin: 0px;
+}
+
+.tirp-slider-text {
+  position: absolute;
+  bottom: 0;
+  margin-left: 12px;
+  margin-bottom: 10px;
+}
+
+.tirp-slider-text h4 {
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+.tirp-slider-text p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  margin: 0px;
+}
+
+.trip-slider-item {
+  border-radius: 12px;
+}
+
+.trip-img img {
+  border-radius: 12px;
+  height: 270px;
+  max-height: 100%;
+  object-fit: cover;
 }
