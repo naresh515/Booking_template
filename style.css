@@ -782,6 +782,7 @@ li::marker {
 
 .book-item {
   border: 1px solid #febb02;
+  background-color: white;
   margin-left: 0;
   display: flex;
   border-radius: 4px;
@@ -789,10 +790,37 @@ li::marker {
   padding: 8px;
   height: 55px;
   outline: none;
+  align-items: center;
 }
+
+.book-item i {
+  color: #474747;
+  fill: #474747;
+  margin-right: 10px;
+  font-weight: 100 !important;
+}
+
 .datePicker {
   width: 294px;
   max-width: 100%;
+}
+
+.datePicker1 {
+  border: none;
+  outline: none;
+}
+
+.location svg {
+  width: 20px;
+  color: #474747;
+  fill: #474747;
+  margin-right: 10px;
+}
+
+.searchLocation {
+  width: 100%;
+  border: none;
+  outline: none;
 }
 .sect {
   width: 294px;
