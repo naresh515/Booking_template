@@ -136,47 +136,54 @@
             <form method="post">
               <input
                 type="text"
-                placeholder="where are you going?"
+                placeholder="Where are you going?"
                 class="location book-item"
               />
               <input
                 type="text"
                 name="daterange"
-                value="09/05/2023 -10/05/2023 "
+                placeholder="09/05/2023 -10/05/2023 "
                 class="datePicker book-item"
               />
-              <select class="select book-item">
-                <option>
-                  <div class="first-option">
+              <div class="sect">
+                <span class="box">
+                  <button class="drop" type="button">
+                    <span class="svg-icon">
+                      <i class="fa-regular fa-user"></i>
+                    </span>
+                    <span class="text-svg">1 adults · 0 children · 1 room</span>
+                    <span class="icon"
+                      ><i class="fa-solid fa-chevron-down"></i
+                    ></span>
+                  </button>
+                </span>
+                <span class="deop-item">
+                  <div class="adult">
                     <span>Adults</span>
-                    <span class="counter">
+                    <div class="buttons">
                       <button type="button" class="minus">-</button>
                       <span class="button-text">1</span>
                       <button type="button" class="plus">+</button>
-                    </span>
+                    </div>
                   </div>
-                </option>
-                <option>
-                  <div class="first-option">
+                  <div class="children">
                     <span>Children</span>
-                    <span class="counter">
+                    <div class="buttons">
                       <button type="button" class="minus">-</button>
                       <span class="button-text">0</span>
                       <button type="button" class="plus">+</button>
-                    </span>
+                    </div>
                   </div>
-                </option>
-                <option>
-                  <div class="first-option">
+                  <div class="rooms">
                     <span>Rooms</span>
-                    <span class="counter">
+                    <div class="buttons">
                       <button type="button" class="minus">-</button>
                       <span class="button-text">1</span>
                       <button type="button" class="plus">+</button>
-                    </span>
+                    </div>
                   </div>
-                </option>
-              </select>
+                </span>
+              </div>
               <button type="submit" class="sub-btn">Search</button>
             </form>
           </div>

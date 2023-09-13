@@ -15,7 +15,6 @@ img {
   width: 80%;
   margin: 0 auto;
   max-width: 100%;
-  overflow: hidden;
 }
 
 header {
@@ -792,9 +791,13 @@ li::marker {
   width: 294px;
   max-width: 100%;
 }
-.select {
+.sect {
   width: 294px;
   max-width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sub-btn {
   width: 108px;
@@ -824,14 +827,97 @@ li::marker {
   margin-top: -55px;
 }
 
-.selecOption{
+.selecOption {
   margin: 50px 0px 30px;
 }
 .tranding-destinations,
 .property-type,
-.unique{
+.unique {
   margin: 60px 0px;
 }
-.Homes-guest{
+.Homes-guest {
   margin: 0px 0px 60px;
+}
+.first-option {
+  display: flex;
+  justify-content: space-around;
+}
+
+.drop {
+  color: #1a1a1a;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  text-align: left;
+  padding: 8px 24px 8px 8px;
+  width: 100%;
+}
+
+.box {
+  width: 100%;
+  padding: 8px;
+}
+
+.book-item::placeholder {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.deop-item {
+  display: none;
+  background-color: white;
+  position: absolute;
+  left: -50px;
+  right: 0px;
+  top: 60px;
+  z-index: 9;
+  border-radius: 8px;
+  box-shadow: 0 2px 16px 0 rgba(26, 26, 26, 0.24);
+  padding: 32px;
+  color: #1a1a1a;
+  width: 290px;
+}
+
+.sect {
+  position: relative;
+}
+
+.on {
+  display: block;
+}
+
+.adult,
+.children,
+.rooms {
+  display: flex;
+  justify-content: space-between;
+}
+
+.minus,
+.plus {
+  border: none;
+  font-size: 20px;
+  background-color: transparent;
+  color: #006ce4;
+  line-height: 30px;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.minus:disabled {
+  color: rgba(16, 16, 16, 0.3);
+}
+.svg-icon {
+  color: #474747;
+  padding-right: 8px;
+}
+
+.icon {
+  position: absolute;
+  right: 5px;
 }

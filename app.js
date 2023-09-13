@@ -67,4 +67,40 @@ $(document).ready(function () {
   //   $(".list").removeClass("first")
   //   $(this).addClass("first");
   // });
+
+  $(".plus").click(function () {
+    var textValue = $(this).parent().find(".button-text");
+    var currentValue = parseInt(textValue.text());
+    currentValue++;
+    textValue.text(currentValue);
+    updateDropValue();
+  });
+
+  $(".minus").click(function () {
+    var textValue = $(this).parent().find(".button-text");
+    var currentValue = parseInt(textValue.text());
+    if (currentValue > 0) {
+      currentValue--;
+    }
+    textValue.text(currentValue);
+    updateDropValue();
+  });
+
+  function updateDropValue() {
+    var adultValue = parseInt($(".adult .button-text").text());
+    var childrenValue = parseInt($(".children .button-text").text());
+    var roomValue = parseInt($(".rooms .button-text").text());
+
+    $(".text-svg").text(
+      adultValue +
+        " adults . " +
+        childrenValue +
+        " children . " +
+        roomValue +
+        " room"
+    );
+  }
+  $(".box").click(function () {
+    $(".deop-item").toggleClass("on");
+  });
 });
