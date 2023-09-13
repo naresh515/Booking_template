@@ -449,23 +449,29 @@ li::marker {
   margin-bottom: 30px;
 }
 
-.yellow-dot::before {
-  content: "";
-  height: 100px;
-  width: 100px;
+.yellow-dot {
+  border-radius: 50%;
+  bottom: 40px;
+  height: 64px;
+  left: -20px;
+  position: absolute;
+  width: 64px;
   background-color: #ffb700;
-  display: inline-block;
-  border-radius: 100%;
 }
 
 .discover {
   display: flex;
   justify-content: flex-end;
   min-height: 230px;
+  height: 230px;
   overflow: hidden;
   padding: 16px;
   text-align: center;
   text-decoration: none;
+  border: 1px solid #e7e7e7;
+  margin: 24px 0px;
+  border-radius: 12px;
+  position: relative;
 }
 .discount,
 .discount-page {
@@ -988,4 +994,71 @@ li::marker {
   height: 270px;
   max-height: 100%;
   object-fit: cover;
+}
+
+.blue-dot {
+  background-color: #006ce4;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: -100px 0 -100px 100px;
+  max-width: 100%;
+  width: 500px;
+  min-width: 400px;
+  padding-left: 10%;
+  position: relative;
+}
+
+.dot-text,
+.dot-list-itme span,
+.middle-dot span {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.dot-list-itme span {
+  text-decoration: underline;
+}
+
+.span-btn span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #006ce4;
+  font-weight: 600;
+}
+
+.span-btn {
+  padding: 6px 0px;
+  background-color: white;
+}
+.top-dot {
+  display: flex;
+  align-items: center;
+}
+
+.dot-list {
+  margin: 0;
+  padding: 0;
+}
+
+.dot-list .dot-list-itme {
+  width: 50% !important;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.middle-dot {
+  width: 50%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.top-btn {
+  width: 50%;
+}
+.discover-img {
+  padding-left: 32px;
+  margin-right: 32px;
 }

@@ -36,6 +36,7 @@ $(document).ready(function () {
   });
 
   $(".dot-list").slick({
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     dots: false,
