@@ -14,7 +14,7 @@ img {
 .container {
   width: 80%;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 1400px;
 }
 
 header {
@@ -538,7 +538,7 @@ li::marker {
   color: #474747;
 }
 
-.top-delhi {
+.about-city {
   position: absolute;
   display: flex;
   align-items: center;
@@ -565,28 +565,11 @@ li::marker {
   margin: 0;
 }
 
-.city {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.city2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-}
-
 .picture img {
   height: 300px;
   object-fit: cover;
   border-radius: 12px;
-}
-
-.city-details {
-  display: flex;
-  flex-direction: column;
-  gap: 17px;
+  border: 1px solid transparent;
 }
 
 .tranding-destinations h4,
@@ -618,20 +601,19 @@ li::marker {
   color: #474747;
 }
 
-.delhi,
-.jaipur {
-  border: 1px solid transparent;
+.trandingCity {
   border-radius: 12px;
   position: relative;
 }
 
-.delhi:hover,
-.jaipur:hover {
+.picture img:hover {
   border: 1px solid #febb02;
 }
 
-.delhi:hover .top-delhi,
-.jaipur:hover .top-delhi {
+.picture {
+  overflow: hidden;
+}
+.trandingCity:hover .about-city {
   background: linear-gradient(
     180deg,
     rgba(0, 27, 65, 0.85) 0,
@@ -1098,4 +1080,21 @@ li::marker {
 
 .footer-list li:hover {
   color: #bc5b01;
+}
+
+.city-details {
+  display: grid;
+  gap: 17px;
+}
+
+.trandingCity:nth-child(3) {
+  grid-column: 1/2;
+}
+
+.trandingCity:nth-child(4) {
+  grid-column: 2/3;
+}
+
+.trandingCity:nth-child(5) {
+  grid-column: 3/4;
 }
