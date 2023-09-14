@@ -604,6 +604,7 @@ li::marker {
 .trandingCity {
   border-radius: 12px;
   position: relative;
+  grid-column: auto / span 2;
 }
 
 .picture img:hover {
@@ -1084,17 +1085,17 @@ li::marker {
 
 .city-details {
   display: grid;
-  gap: 17px;
+  gap: 11px 17px;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(6, 1fr);
 }
 
-.trandingCity:nth-child(3) {
-  grid-column: 1/2;
+.trandingCity:nth-child(1),
+.trandingCity:nth-last-child(2) {
+  grid-column: 1 / span 3;
 }
 
-.trandingCity:nth-child(4) {
-  grid-column: 2/3;
-}
-
-.trandingCity:nth-child(5) {
-  grid-column: 3/4;
+.trandingCity:nth-child(2),
+.trandingCity:nth-last-child(1) {
+  grid-column: 4 / span 3;
 }
