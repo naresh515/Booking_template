@@ -147,6 +147,6 @@ $(document).ready(function () {
 
   $(".hamburger").click(function () {
     $(".hamburger").toggleClass("is-active");
-    $(".list-item").toggleClass("list-item-display")
+    $(".list-item").toggleClass("list-item-display");
   });
 });
