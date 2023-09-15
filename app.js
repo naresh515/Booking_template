@@ -17,22 +17,62 @@ $(document).ready(function () {
     slidesToShow: 2,
     slidesToScroll: 1,
     dots: true,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
   $(".common-slider2").slick({
     infinite: false,
     slidesToShow: 6,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          infinite: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
   $(".trip-slider").slick({
     infinite: false,
     slidesToShow: 3,
     slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 
   $(".common-slider").slick({
     infinite: false,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 
   $(".dot-list").slick({

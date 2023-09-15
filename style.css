@@ -389,6 +389,7 @@ li::marker {
 .form {
   max-width: 50%;
   margin: 20px auto 0 auto;
+  max-width: 100%;
 }
 
 .form form {
@@ -401,6 +402,7 @@ li::marker {
   font-size: 16px;
   line-height: 24px;
   text-indent: 10px;
+  max-width: 100%;
 }
 
 .saveTimebtn {
@@ -411,6 +413,7 @@ li::marker {
   font-size: 20px;
   line-height: 28px;
   border: none;
+  max-width: 100%;
 }
 
 .listOfProperty {
@@ -446,7 +449,7 @@ li::marker {
   line-height: 16px;
 }
 
-.bottom-tab {
+.destinations-tab {
   margin-bottom: 30px;
 }
 
@@ -635,6 +638,7 @@ li::marker {
   color: #1a1a1a;
   margin: 0;
   width: 299px;
+  max-width: 100%;
 }
 
 .text-area button {
@@ -824,6 +828,7 @@ li::marker {
   font-size: 20px;
   line-height: 28px;
   border: 2px solid #febb02;
+  max-width: 100%;
 }
 .location {
   width: 380px;
@@ -895,6 +900,7 @@ li::marker {
   padding: 32px;
   color: #1a1a1a;
   width: 290px;
+  max-width: 100%;
 }
 
 .sect {
@@ -939,12 +945,14 @@ li::marker {
 .trip-slider-item.bg-trip {
   width: 540px !important;
   flex: 0 0 auto;
+  max-width: 100%;
 }
 
 .trip-slider-item {
   width: 260px !important;
   flex: 0 0 auto;
   margin-right: 16px;
+  max-width: 100%;
 }
 
 .last {
@@ -1060,15 +1068,18 @@ li::marker {
   width: 50% !important;
   text-align: left;
   margin-left: 10px;
+  max-width: 100%;
 }
 
 .middle-dot {
   width: 50%;
   text-align: left;
   margin-bottom: 20px;
+  max-width: 100%;
 }
 .top-btn {
   width: 50%;
+  max-width: 100%;
 }
 .discover-img {
   padding-left: 32px;
@@ -1098,4 +1109,180 @@ li::marker {
 .trandingCity:nth-child(2),
 .trandingCity:nth-last-child(1) {
   grid-column: 4 / span 3;
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  .booking-form {
+    margin-top: -25px;
+  }
+
+  .booking {
+    max-height: 100%;
+  }
+
+  .location,
+  .datePicker,
+  .sub-btn,
+  .sect {
+    width: 100%;
+  }
+
+  .city-name {
+    padding-left: 5px;
+  }
+
+  .city-name h5 {
+    font-size: 18px;
+  }
+
+  .picture img {
+    height: auto;
+  }
+
+  .home-cards,
+  .cards,
+  .offer-slider-item {
+    margin: 0 auto;
+  }
+
+  .footer,
+  .grid-tab {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-item {
+    border: 1px solid #e7e7e7;
+  }
+
+  .list-item-property,
+  .list-item,
+  .discover {
+    display: none;
+  }
+
+  .booking-title {
+    padding: 20px 0px;
+  }
+
+  .booking-title span {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .booking-title p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .selecOption {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .checkbox {
+    font-size: 14px;
+  }
+
+  .tranding-destinations h4,
+  .explore h4,
+  .tab-header h4,
+  .unique-heading h4,
+  .offers h3,
+  .main-text h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .tranding-destinations p,
+  .explore p,
+  .tab-header p,
+  .unique-heading p,
+  .offers p,
+  .main-text p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .property-type h4,
+  .Homes-guest-heading h4,
+  .trip-heading h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .bottom-tab-list-item.current button,
+  .tab-list-item.current button {
+    padding: 8px 10px;
+  }
+
+  .list-text-item {
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .list-text-item li {
+    padding: 0px 5px;
+    border: none;
+  }
+
+  .list-text-item li a span {
+    border-right: 1px solid rgb(0, 53, 128);
+    padding: 0px 10px 0px 0px;
+  }
+
+  .login {
+    margin-top: 20px;
+  }
+
+  .componey-logo ul {
+    padding: 0px;
+  }
+
+  .componey-logo ul li {
+    padding: 0px 10px;
+  }
+
+  .booking-form form {
+    margin: 0px;
+    flex-direction: column;
+  }
+
+  .deop-item {
+    left: unset;
+  }
+
+  .tab-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bottom-tab-list-item button,
+  .tab-list-item button {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .bottom-tab-list-item.current button,
+  .tab-list-item.current button {
+    padding: 0px 5px;
+  }
+
+  .container {
+    width: 90%;
+  }
+  .tab-content,
+  .tab-content1 {
+    padding: 0px;
+  }
+
+  .tab-slider-item,
+  .explore-slider-itme,
+  .property-slider-item {
+    margin-right: 5px;
+  }
 }
