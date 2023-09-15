@@ -1111,7 +1111,56 @@ li::marker {
   grid-column: 4 / span 3;
 }
 
+.text {
+  font-size: 14px;
+  line-height: 20px;
+}
+.hamburger {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 22px;
+  font-size: 18px;
+  display: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  float: right;
+  padding: 18px;
+  text-align: center;
+  text-indent: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+}
+
+.hamburger span {
+  display: block;
+  background: #fff;
+  height: 3px;
+  margin-top: 3px;
+  width: 21px;
+}
+
+.hamburger.is-active .line1 {
+  transform: translateY(6px) rotate(50deg);
+}
+
+.hamburger.is-active .line2 {
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+
+.hamburger.is-active .line3 {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
 @media screen and (min-width: 320px) and (max-width: 800px) {
+  .hamburger {
+    display: block;
+  }
+
   .booking-form {
     margin-top: -25px;
   }
@@ -1119,7 +1168,9 @@ li::marker {
   .booking {
     max-height: 100%;
   }
-
+  .list-item.list-item-display {
+    display: flex;
+  }
   .location,
   .datePicker,
   .sub-btn,
@@ -1155,9 +1206,16 @@ li::marker {
   }
 
   .list-item-property,
-  .list-item,
   .discover {
     display: none;
+  }
+
+  .list-item {
+    display: none;
+    flex-direction: column;
+  }
+  .first {
+    padding: 0px;
   }
 
   .booking-title {

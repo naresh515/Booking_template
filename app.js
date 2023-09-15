@@ -86,6 +86,11 @@ $(document).ready(function () {
     variableWidth: false,
   });
 
+  $(".list").click(function () {
+    $(".list").removeClass("first");
+    $(this).addClass("first");
+  });
+
   $tab.click(function () {
     const tab_id = $(this).attr("data-tab");
 
@@ -138,5 +143,10 @@ $(document).ready(function () {
   }
   $(".box").click(function () {
     $(".deop-item").toggleClass("on");
+  });
+
+  $(".hamburger").click(function () {
+    $(".hamburger").toggleClass("is-active");
+    $(".list-item").toggleClass("list-item-display")
   });
 });
